@@ -1,0 +1,2 @@
+# architecture
+Home Automator Architecture
