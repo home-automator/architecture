@@ -1,0 +1,21 @@
+# macOS
+.DS_Store
+
+# NPM
+npm-debug.log
+
+# Node
+node_modules
+build
+.env
+
+# Website
+website/build
+website/i18n
+website/translated_docs
+website/node_modules
+/website
+/docs
+
+# DB
+/.db
