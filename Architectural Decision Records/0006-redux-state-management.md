@@ -1,4 +1,4 @@
-# 6. State Management
+# 6. Redux State Management
 
 Date: 11-08-2019
 

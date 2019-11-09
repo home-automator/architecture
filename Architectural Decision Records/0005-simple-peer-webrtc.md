@@ -1,4 +1,4 @@
-# 5. WebRTC P2P
+# 5. Simple Peer WebRTC
 
 Date: 11-08-2019
 
