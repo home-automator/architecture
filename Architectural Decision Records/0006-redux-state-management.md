@@ -41,7 +41,7 @@ should provide for resiliency and maintainability.  Many community
 developers should find state management within Home Automator to be
 familiar.  The strict "full life cycle" implementation for state changes
 for both clients and Widgets alike, should result in fewer bugs and
-unanticipated side affects.
+unanticipated side effects.
 
 Redux does add some additional complexity and a lot more boilerplate
 code.  However, it's all there for a reason and is what makes the above
