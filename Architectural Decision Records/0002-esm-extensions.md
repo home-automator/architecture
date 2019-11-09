@@ -44,5 +44,6 @@ The choice of ES modules (over CJS) for use in a Node system may not
 be intuitive for some developers.  However, since front end development,
 utilizing modern frameworks such as React and Vue, commonly make use of
 ES modules, many developers should find the consistency of this approach
-appealing.
+appealing.  Furthermore, Node support and adoption of ESM syntax is
+increasing rapidly, so common widespread familiarity is inevitable.
 
