@@ -21,7 +21,7 @@ for iOS and Android are available.
 
 ## Decision
 
-Home Automator will use of WebRTC for P2P communications.  Multimedia
+Home Automator will make use of WebRTC for P2P communications.  Multimedia
 channels will be used to allow for server resources such and video to be
 streamed to clients.  Data channels will be be used for the exchange of
 state and client invoked actions.
