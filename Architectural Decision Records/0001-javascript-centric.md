@@ -31,7 +31,7 @@ This decision is expected to positively impact the speed that Home
 Automator can be improved and enhanced, as the Javascript developer
 community is very large and shared NPM modules are abundant.  Home
 Automator will likely attract contributions from both novice and 
-expert developers who may also be passionate about general technology.
+expert developers who may also be passionate about home automation tech.
 
 This decision will certainly exclude (or discourage) those developers
 who favor other popular languages such as Java or Python.  For those
