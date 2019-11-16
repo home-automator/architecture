@@ -22,8 +22,8 @@ or greater.  Node will be used for the backend server components.
 Client apps will be developed using ES6+ and React wherever possible.
 Furthermore, any associated system components and solutions will be
 selected that are Javascript centric or generally Javascript friendly.
-A suitable Node version with serviceable ES6+ support will be utilized,
-or a suitable ESM loader will be utilized.
+A Node version with serviceable ES6+ support will be utilized, or a
+suitable ESM loader will be utilized.
 
 ## Impacts
 

@@ -27,21 +27,21 @@ will be established server-side, along with requisite actions and reducers.
 Subscriptions to state store changes will trigger server state change
 handlers, which will propagate the latest state throughout the system.
 
-Widgets will 1) receive and process client Update Actions, 2) perform
-associated actions on devices and services, and 3) invoke resulting state
-changes on the central state store.  The resulting State will then be
-delivered back to Widgets for postprocessing and to the clients for
-propagation throughout the UI.
+On the server, Widgets will 1) receive and process client Update Actions,
+2) perform associated actions on devices and services, and 3) invoke
+necessary state changes on the central state store.  The resulting State
+will then be delivered back to Widgets for postprocessing and to the clients
+for propagation throughout the UI.  There will be strict adherence to this
+State Change Life Cycle to ensure consistency.
 
 ## Impacts
 
-State management is inherently complex, so the utilization of a well
+State management is inherently complex, so the utilization of the well
 established Redux solution - borrowed from popular front end patterns -
 should provide for resiliency and maintainability.  Many community
 developers should find state management within Home Automator to be
-familiar.  The strict "full life cycle" implementation for state changes
-for both clients and Widgets alike, should result in fewer bugs and
-unanticipated side effects.
+familiar.  The strict State Change Life Cycle implementation should result
+in fewer bugs and unanticipated side effects.
 
 Redux does add some additional complexity and a lot more boilerplate
 code.  However, it's all there for a reason and is what makes the above

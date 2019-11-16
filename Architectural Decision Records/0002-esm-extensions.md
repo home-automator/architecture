@@ -26,7 +26,7 @@ extension using documented standard methods.
 
 Extension modules, and their dependencies,  will be installed like any
 other package modules (via NPM or Yarn) and their associated settings
-will included in an admin defined configuration.
+will be included in an admin defined configuration.
 
 ## Impacts
 
