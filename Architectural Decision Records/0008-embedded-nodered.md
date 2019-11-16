@@ -9,18 +9,17 @@ Adopted
 ## Context
 
 Home Automator will require automation capabilities that will allow the
-creations of routines for automatically controlling Widgets based on
+creation of routines for automatically controlling Widgets based on
 time, state, and other changes throughout the system.
 
 The IFTTT pattern is a popular choice among other home automation
-systems due to its simplicity.  While this approach is useful for basic
-automation, it falls flat when more complex automation is desired.  It
-is also limited to the scope of the capabilities of the home automation
-system.
+systems.  While this approach is simple and useful for basic automation,
+it falls flat when more complex automation is desired.  It is also
+limited to the scope of the capabilities of the home automation system.
 
-NodeRed is a popular browser based open source flow based visual
-programing environment written in Javascript.  It originated from IBM,
-and has many developer community contributed modules called Nodes.
+NodeRed is a popular open source flow based visual programing environment
+written in Javascript.  It originated from IBM, and has many developer
+community contributed modules called Nodes.
 
 ## Decision
 
@@ -42,5 +41,5 @@ contributed Nodes, extending well beyond the limits of Widget Features.
 Due to NodeRed architecture limitations, administration of automation
 flows will be restricted to the server only (not available within the
 client apps).  To overcome this limitation, heavy modification of NodeRed
-will likely be necessary.
+would likely be necessary.
  
