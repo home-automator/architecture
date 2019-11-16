@@ -42,8 +42,9 @@ Because each Widget can include multiple Features, a unique device or service
 representation is easily achievable.  For example, a smart wall plug can not
 only include a binary Switch Feature, but also incorporate a energy usage
 Sensor Feature as well.  In other systems, those two capabilities may require
-representation as two separate devices.  The abstraction of devices and
-services also significantly normalizes the development of extensions, albeit
-while introducing the slight complexity associated with defining feature
-properties.  Also, the lack of predefined entity classes naturally introduces
-a possible lack of uniformity.
+representation as two separate devices.
+
+The abstraction of devices and services also significantly normalizes the
+development of extensions, albeit while introducing the slight complexity
+associated with defining feature properties.  Also, the lack of predefined
+entity classes naturally introduces a possible lack of uniformity.
