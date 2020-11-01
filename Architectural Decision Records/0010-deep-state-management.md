@@ -1,10 +1,10 @@
 # 6. Redux State Management
 
-Date: 11-08-2019
+Date: 11-01-2020
 
 ## Status
 
-Superseded by 0010
+Adopted (Supersedes 0006)
 
 ## Context
 
@@ -12,6 +12,9 @@ In Home Automator, the state of Widgets must be managed in a manner that
 ensures changes can be easily relayed to client applications. State is
 also central to React and React Native, which Home Automator will employ
 for much of the front end development.
+
+ADR 0006 previously established Redux as the central store, which caused
+significant complexity impacting maintainability.
 
 ## Decision
 
@@ -22,10 +25,10 @@ make state changes directly.  The server state store is the single source
 of truth for Home Automator, and is the only place state mutations are
 allowed.
 
-We will use Redux for state management.  A conventional single Redux store
-will be established server-side, along with requisite actions and reducers.
-Subscriptions to state store changes will trigger server state change
-handlers, which will propagate the latest state throughout the system.
+We will use deep-state-observer (as a replacement for Redux) for state
+management.  A single store will be established server-side.  Subscriptions
+to state store changes will trigger server state change handlers, which will
+propagate the latest state throughout the system.
 
 On the server, Widgets will 1) receive and process client Update Actions,
 2) perform associated actions on devices and services, and 3) invoke
@@ -36,13 +39,6 @@ State Change Life Cycle to ensure consistency.
 
 ## Impacts
 
-State management is inherently complex, so the utilization of the well
-established Redux solution - borrowed from popular front end patterns -
-should provide for resiliency and maintainability.  Many community
-developers should find state management within Home Automator to be
-familiar.  The strict State Change Life Cycle implementation should result
-in fewer bugs and unanticipated side effects.
-
-Redux does add some additional complexity and a lot more boilerplate
-code.  However, it's all there for a reason and is what makes the above
-benefits achievable.
+The elimination of Redux decreases complexity and boilerplate code. The
+deep-state-observer module provides a simpler alternative while still
+adhering to immutability concepts and adding robust subscription features.
